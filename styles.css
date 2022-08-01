@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+    --primary-color-light-cyan: hsl(193, 38%, 86%);
+    --primary-color-neon-green: hsl(150, 100%, 66%);
+    --primary-color-neon-green: rgb(82, 255, 168);
+
+    --neutral-color-grayish-blue : hsl(217, 19%, 38%);
+    --neutral-color-dark-grayinsh-blue:hsl(217, 19%, 24%);
+    --neutral-color-dark-blue:hsl(218, 23%, 16%);
+
+    --fs-quote:28px;
+
+    --mobile-width: 375px;
+    --desktop-width:1440px;
+    /* - Mobile: 375px
+- Desktop: 1440px */
+}
+
+*{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--primary-color-light-cyan);
+    background-color: var(--neutral-color-dark-blue);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* ATTRIBUTTION STYLES */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    height: auto;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+/* ATTRIBUTTION STYLES */
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .adviceContainer{
+    margin: 0 1rem;
+    background: var(--neutral-color-dark-grayinsh-blue);
+    border-radius: 10px;
+    position: relative;
+    height: auto;
+    display: flex;
+    padding: 3rem 3rem 4rem 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    width: 444px;
+    box-shadow: 10px 10px 61px -17px rgba(0,0,0,0.7);
+  }
+  .adviceContainer>img{
+    width: 100%;
+  }
+  .adviceContainer>.btn>img{
+    width: 20px;
+  }
+  .container h1{
+    color: var(--primary-color-neon-green);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  .container p {
+    font-size: var(--fs-quote);
+    text-align: center;
+    margin: 20px auto;
+    padding: 0;
+    display: block;
+  }
+
+  .btn{
+    border-radius: 50%;
+    background: var(--primary-color-neon-green);
+    height: 60px;
+    width: 60px;
+    border: none;
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    transform:translate(-50%);
+    box-shadow: 0px 0px 35px -10px rgba(0,0,0,0.47);
+  }
+  .btn>div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .btn:hover{
+    box-shadow: 0px 0px 36px 6px rgba(82, 255, 169, 0.8);
+  }
